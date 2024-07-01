@@ -73,8 +73,10 @@ export default function Contact() {
       });
       if (response.status == 200) {
         setLoading(false);
+        localStorage.setItem("request was sent", "succesfully");
       } else {
         setLoading(false);
+        localStorage.setItem("request was sent", "unsuccessfully");
       }
     }
   };

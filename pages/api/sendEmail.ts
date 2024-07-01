@@ -20,7 +20,7 @@ export default function handler(
         pass: process.env.specificPassword,
       },
     });
-    console.log(req.body.name);
+    console.log(process.env.specificPassword);
 
     // Compose and send the email
     const mailForMe = {
